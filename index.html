@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body class=" ">
-        <div id="container" class="mx-auto">
+        <div id="container" class="mx-auto w-4/5">
             <nav
                 id="navbar"
                 class="flex place-items-start p-4 text-black sticky top-0 z-50 text-lg"
@@ -37,7 +37,7 @@
                                 type="button"
                                 class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-semibold text-gray-600 hover:text-black"
                                 id="menu-button"
-                                aria-expanded="true"
+                                aria-expanded="trye"
                                 aria-haspopup="true"
                             >
                                 Features
@@ -57,7 +57,7 @@
                         </div>
 
                         <div
-                            class="absolute right-0 z-10 mt-2 w-36 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            class="absolute right-4 z-10 mt-2 w-36 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                             role="menu"
                             aria-orientation="vertical"
                             aria-labelledby="menu-button"
@@ -141,7 +141,7 @@
                         </div>
 
                         <div
-                            class="absolute right-0 z-10 mt-2 w-28 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            class="absolute right-4 z-10 mt-2 w-28 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                             role="menu"
                             aria-orientation="vertical"
                             aria-labelledby="menu-button"
@@ -203,28 +203,46 @@
             </nav>
             <div
                 id="content"
-                class="grid grid-cols-2 grid-rows-4 grid-flow-col max-content mx-auto"
+                class="grid grid-cols-2 grid-rows-1 max-content mx-auto"
             >
-                <div class="row-span-1 w-auto m-auto">
-                    <div class="">
+                <div class="block w-4/5 relative left-28 top-36">
+                    <div class="block my-8">
                         <h1 class="text-8xl font-bold">Make</h1>
                         <h1 class="text-8xl font-bold">remote work</h1>
                     </div>
-                </div>
 
-                <p
-                    class="row-span-1 font-medium text-lg w-3/5 px-4 grid m-auto"
-                >
-                    Get your team in sync, no matter your location. Streamline
-                    processes, create team rituals, and watch productivity soar.
-                </p>
-                <button class="row-span-1">
-                    <span
-                        class="text-lg font-bold border-solid border-black border-2 rounded-2xl px-6 py-2"
-                        >Learn more</span
+                    <p class="block font-medium text-xl w-4/5 my-16">
+                        Get your team in sync, no matter your location.
+                        Streamline processes, create team rituals, and watch
+                        productivity soar.
+                    </p>
+                    <button
+                        class="h-16 w-48 text-lg font-bold border-solid border-black border-2 rounded-2xl px-6 py-2 cursor-pointer"
                     >
-                </button>
-                <div id="sponsors" class="row-span-1"></div>
+                        <span class="">Learn more</span>
+                    </button>
+                    <div id="sponsors" class="block py-28">
+                        <img
+                            src="./images/client-databiz.svg"
+                            alt=""
+                            class="inline-block"
+                        /><img
+                            src="./images/client-audiophile.svg"
+                            alt=""
+                            class="inline-block"
+                        />
+
+                        <img
+                            src="./images/client-meet.svg"
+                            alt=""
+                            class="inline-block"
+                        /><img
+                            src="./images/client-maker.svg"
+                            alt=""
+                            class="inline-block"
+                        />
+                    </div>
+                </div>
                 <picture id="hero" class="row-span-4">
                     <source
                         media="(min-width:650px)"
@@ -238,24 +256,19 @@
                         src="./images/image-hero-desktop.png"
                         alt="men holding laptop"
                         style="width: auto"
-                        class="h-3/5"
+                        class="h-4/6 relative top-20 left-28"
                     />
                 </picture>
             </div>
-            <div class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by <a href="#">Your Name Here</a>.
-            </div>
-            <script src="./index.js"></script>
-            <script
-                src="https://kit.fontawesome.com/042e9b1656.js"
-                crossorigin="anonymous"
-            ></script>
         </div>
-        <script src="bundle.js"></script>
+        <div class="attribution text-center top-12">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Anna Rurak</a>.
+        </div>
+        <script src="./index.js"></script>
     </body>
 </html>
