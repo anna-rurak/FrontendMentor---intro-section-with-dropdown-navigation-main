@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body class=" ">
+        <div id="container" class="mx-auto">
+            <nav
+                id="navbar"
+                class="flex place-items-start p-4 text-black sticky top-0 z-50 text-lg"
+            >
+                <img
+                    src="./images/logo.svg"
+                    alt="logo"
+                    class="h-8 mx-10 my-3"
+                />
+                <div id="menu" class="flex space-x-12 my-3">
+                    <button class="cursor-pointer font-medium">
+                        <span>Features</span
+                        ><i class="fa-solid fa-angle-down ml-2"></i>
+                    </button>
+                    <button class="cursor-pointer font-medium">
+                        <span>Company</span
+                        ><i class="fa-solid fa-angle-down ml-2"></i>
+                    </button>
+                    <button class="cursor-pointer font-medium">Careers</button>
+                    <button class="cursor-pointer font-medium">About</button>
+                </div>
+                <div id="login-registration" class="flex space-x-4 ml-auto">
+                    <button class="cursor-pointer px-8 font-medium">
+                        Login
+                    </button>
+                    <button
+                        class="cursor-pointer font-medium border-solid border-black border-2 rounded-2xl px-6 py-2"
+                    >
+                        Register
+                    </button>
+                </div>
+            </nav>
+            <div
+                id="content"
+                class="grid grid-cols-2 grid-rows-4 grid-flow-col max-content mx-auto"
+            >
+                <div class="row-span-1 w-auto m-auto">
+                    <div class="">
+                        <h1 class="text-8xl font-bold">Make</h1>
+                        <h1 class="text-8xl font-bold">remote work</h1>
+                    </div>
+                </div>
+
+                <p
+                    class="row-span-1 font-medium text-lg w-3/5 px-4 grid m-auto"
+                >
+                    Get your team in sync, no matter your location. Streamline
+                    processes, create team rituals, and watch productivity soar.
+                </p>
+                <button class="row-span-1">
+                    <span
+                        class="text-lg font-bold border-solid border-black border-2 rounded-2xl px-6 py-2"
+                        >Learn more</span
+                    >
+                </button>
+                <div id="sponsors" class="row-span-1"></div>
+                <picture id="hero" class="row-span-4">
+                    <source
+                        media="(min-width:650px)"
+                        srcset="./images/image-hero-desktop.png"
+                    />
+                    <source
+                        media="(min-width:465px)"
+                        srcset="./images/image-hero-mobile.png"
+                    />
+                    <img
+                        src="./images/image-hero-desktop.png"
+                        alt="men holding laptop"
+                        style="width: auto"
+                        class="h-3/5"
+                    />
+                </picture>
+            </div>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Your Name Here</a>.
+            </div>
+            <script src="./index.js"></script>
+            <script
+                src="https://kit.fontawesome.com/042e9b1656.js"
+                crossorigin="anonymous"
+            ></script>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
