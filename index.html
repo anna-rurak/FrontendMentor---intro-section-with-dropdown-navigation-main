@@ -31,23 +31,171 @@
                     class="h-8 mx-10 my-3"
                 />
                 <div id="menu" class="flex space-x-12 my-3">
-                    <button class="cursor-pointer font-medium">
-                        <span>Features</span
-                        ><i class="fa-solid fa-angle-down ml-2"></i>
+                    <div class="relative inline-block text-left">
+                        <div>
+                            <button
+                                type="button"
+                                class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-semibold text-gray-600 hover:text-black"
+                                id="menu-button"
+                                aria-expanded="true"
+                                aria-haspopup="true"
+                            >
+                                Features
+                                <svg
+                                    class="-mr-1 h-5 w-5 text-gray-600 hover:text-black"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div
+                            class="absolute right-0 z-10 mt-2 w-36 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            role="menu"
+                            aria-orientation="vertical"
+                            aria-labelledby="menu-button"
+                            tabindex="-1"
+                        >
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-4 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-0"
+                                    ><img
+                                        src="./images/icon-todo.svg"
+                                        class="inline-block mx-3"
+                                    />Todo List</a
+                                >
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-4 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-1"
+                                    ><img
+                                        src="./images/icon-calendar.svg"
+                                        class="inline-block mx-3"
+                                    />Calendar</a
+                                >
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-4 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-2"
+                                    ><img
+                                        src="./images/icon-reminders.svg"
+                                        class="inline-block mx-3"
+                                    />Reminders</a
+                                >
+                                <form method="POST" action="#" role="none">
+                                    <button
+                                        type="submit"
+                                        class="text-gray-700 block w-full px-4 py-2 text-left text-sm font-medium"
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-3"
+                                    >
+                                        <img
+                                            src="./images/icon-planning.svg"
+                                            class="inline-block mx-3"
+                                        />Planning
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative inline-block text-left">
+                        <div>
+                            <button
+                                type="button"
+                                class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-md font-semibold text-gray-600 hover:text-black"
+                                id="menu-button"
+                                aria-expanded="true"
+                                aria-haspopup="true"
+                            >
+                                Company
+                                <svg
+                                    class="-mr-1 h-5 w-5 text-gray-600 hover:text-black"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div
+                            class="absolute right-0 z-10 mt-2 w-28 py-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            role="menu"
+                            aria-orientation="vertical"
+                            aria-labelledby="menu-button"
+                            tabindex="-1"
+                        >
+                            <div class="py-1" role="none">
+                                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-6 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-0"
+                                    >History</a
+                                >
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-6 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-1"
+                                    >Our Team</a
+                                >
+                                <a
+                                    href="#"
+                                    class="text-gray-700 block px-6 py-2 text-sm font-medium"
+                                    role="menuitem"
+                                    tabindex="-1"
+                                    id="menu-item-2"
+                                    >Blog</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        class="cursor-pointer font-medium text-gray-600 hover:text-black"
+                    >
+                        Careers
                     </button>
-                    <button class="cursor-pointer font-medium">
-                        <span>Company</span
-                        ><i class="fa-solid fa-angle-down ml-2"></i>
+                    <button
+                        class="cursor-pointer font-medium text-gray-600 hover:text-black"
+                    >
+                        About
                     </button>
-                    <button class="cursor-pointer font-medium">Careers</button>
-                    <button class="cursor-pointer font-medium">About</button>
                 </div>
                 <div id="login-registration" class="flex space-x-4 ml-auto">
-                    <button class="cursor-pointer px-8 font-medium">
+                    <button
+                        class="cursor-pointer px-8 font-medium text-gray-600 hover:text-black"
+                    >
                         Login
                     </button>
                     <button
-                        class="cursor-pointer font-medium border-solid border-black border-2 rounded-2xl px-6 py-2"
+                        class="cursor-pointer font-medium border-solid border-gray-500 border-2 rounded-2xl px-6 py-2 text-gray-600 hover:text-black hover:border-black"
                     >
                         Register
                     </button>
